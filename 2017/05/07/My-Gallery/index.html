@@ -1,15 +1,13 @@
 
-  <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html >
 <head>
   <meta charset="UTF-8">
   
-    <title>Archives: 2017 | Yanjun Blog</title>
+    <title>My Gallery | Yanjun Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Yanjun">
-    
-    <meta name="description" content="we together">
     
     
     
@@ -24,9 +22,9 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-    <body>
-      <header>
-        <div>
+  <body>
+    <header>
+      <div>
 		
 			<div id="imglogo">
 				<a href="/"><img src="/img/logo.svg" alt="Yanjun Blog" title="Yanjun Blog"/></a>
@@ -62,57 +60,82 @@
 			</nav>			
 </div>
 
-      </header>
-      <div id="container">
-        
-
-<div class="archive-title" >
-  <h2 class="archive-icon">2017</h2>
-  
-  <div class="archiveslist archive-float clearfix">
-   <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">3</span></li></ul>
- </div>
-  
-</div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
-
-  <section class="photo" itemscope itemprop="blogPost">
-  
-    <a href="/2017/05/07/My-Gallery/" title="My Gallery" itemprop="url">
-  
-    <h1 itemprop="name">My Gallery</h1>
+    </header>
+    <div id="container">
+      <div id="main" class="photo" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
     
+      <a href="/2017/05/07/My-Gallery/" title="My Gallery" itemprop="url">My Gallery</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://yoursite.com" title="Yanjun">Yanjun</a>
+    </p>
+  <p class="article-time">
     <time datetime="2017-05-07T11:11:15.000Z" itemprop="datePublished">2017-05-07</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2017/05/07/my-new-post/" title="my new post" itemprop="url">
-  
-    <h1 itemprop="name">my new post</h1>
+    Updated:<time datetime="2017-05-07T11:11:15.540Z" itemprop="dateModified">2017-05-07</time>
     
-    <time datetime="2017-05-07T11:09:46.000Z" itemprop="datePublished">2017-05-07</time>
-  </a>
-</section>
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+		</div>
+		
+		  
+	</div>
+		<footer class="article-footer clearfix">
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2017/05/07/hello-world/" title="Hello World" itemprop="url">
-  
-    <h1 itemprop="name">Hello World</h1>
-    
-    <time datetime="2017-05-07T09:22:38.544Z" itemprop="datePublished">2017-05-07</time>
-  </a>
-</section>
 
 
+
+<div class="article-share" id="share">
+
+  <div data-url="http://yoursite.com/2017/05/07/My-Gallery/" data-title="My Gallery | Yanjun Blog" data-tsina="null" class="share clearfix">
   </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2017/05/07/my-new-post/"  title="my new post">
+ <strong>NEXT:</strong><br/> 
+ <span>my new post
+</span>
+</a>
 </div>
 
-      </div>
-      <footer><div id="footer" >
+</nav>
+
+	
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+
+  <div class="rsspart">
+	<a href="null" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
 	
 	<div class="line">
 		<span></span>
@@ -134,7 +157,7 @@
 		</p>
 </div>
 </footer>
-      <script src="/js/jquery-2.1.0.min.js"></script>
+    <script src="/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('.navbar').click(function(){
@@ -161,6 +184,8 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
@@ -180,11 +205,43 @@ $(document).ready(function(){
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
 
 
 
 
 
 
-    </body>
-   </html>
+
+  </body>
+ </html>

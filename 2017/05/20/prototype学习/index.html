@@ -4,16 +4,13 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>JavaScript与HTML分离 | Yanjun Blog</title>
+    <title>prototype学习 | Yanjun Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Yanjun">
     
-    <meta name="description" content="我必须找到一种“挂钩”把JavaScript代码与HTML文档中的有关标记关联起来。
-思路：图片清单里的每一个链接有一个共同点：他们都包含在同一个列表清单的元素里面（ul）。给整个清单设置一个独一无二的ID的办法要简单的多
-添加事件处理函数下面是我想让这个函数完成的工作
-
-[ ] 检查当前浏览器是否">
+    <meta name="description" content="原型图工具axure&amp;amp;Marvelapp我这一周学习的工具主要是axure和MarvelApp这两个原型工具都是以微信为原型来做的设置，这里我主要介绍一下我在学习上面遇到的各种坑点
+看到下面的这个图我的第一个坑点就是没有使用原型里面一个强打的工具就是母版，下面的四个切换的按钮因为有四个页面都">
     
     
     
@@ -73,15 +70,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/05/15/JavaScript与HTML分离/" title="JavaScript与HTML分离" itemprop="url">JavaScript与HTML分离</a>
+      <a href="/2017/05/20/prototype学习/" title="prototype学习" itemprop="url">prototype学习</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="Yanjun">Yanjun</a>
     </p>
   <p class="article-time">
-    <time datetime="2017-05-15T00:16:33.000Z" itemprop="datePublished">2017-05-15</time>
-    更新日期:<time datetime="2017-05-15T00:36:01.854Z" itemprop="dateModified">2017-05-15</time>
+    <time datetime="2017-05-20T06:29:44.000Z" itemprop="datePublished">2017-05-20</time>
+    更新日期:<time datetime="2017-05-20T07:26:45.976Z" itemprop="dateModified">2017-05-20</time>
     
   </p>
 </header>
@@ -90,21 +87,28 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#添加事件处理函数"><span class="toc-number">1.</span> <span class="toc-text">添加事件处理函数</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#原型图工具axure-amp-Marvelapp"><span class="toc-number">1.</span> <span class="toc-text">原型图工具axure&Marvelapp</span></a></li></ol>
 		</div>
 		
-		<p>我必须找到一种<strong>“挂钩”</strong>把JavaScript代码与HTML文档中的有关标记关联起来。</p>
-<p>思路：图片清单里的每一个链接有一个共同点：他们都包含在同一个列表清单的元素里面（ul）。给整个清单设置一个独一无二的ID的办法要简单的多</p>
-<h5 id="添加事件处理函数"><a href="#添加事件处理函数" class="headerlink" title="添加事件处理函数"></a>添加事件处理函数</h5><p>下面是我想让这个函数完成的工作</p>
+		<h2 id="原型图工具axure-amp-Marvelapp"><a href="#原型图工具axure-amp-Marvelapp" class="headerlink" title="原型图工具axure&amp;Marvelapp"></a>原型图工具axure&amp;Marvelapp</h2><p></p><p>我这一周学习的工具主要是axure和MarvelApp这两个原型工具都是以微信为原型来做的设置，这里我主要介绍一下我在学习上面遇到的各种坑点</p><p></p>
+<p></p><p>看到下面的这个图我的第一个坑点就是没有使用原型里面一个强打的工具就是母版，下面的四个切换的按钮因为有四个页面都要用，所以我们在设计网第一个页面的时候可以通过增加母版，从而重复利用下面啊的四个按钮</p><br><img src="/images/Axure1.png" alt=""><p></p>
+<p></p><p>接下来我想要介绍的就是Axure里面的动态面板，这个面板可以帮助我们实现我们想要的任何切换的功能，看下面的这个图片</p><br><img src="/images/Axure2.png" alt=""><br><p></p>
+<p>方法就是</p>
 <ul>
-<li>[ ] 检查当前浏览器是否理解getElementsByTagName</li>
-<li>[ ] 检查当前浏览器是否理解getElementById</li>
-<li>[ ] 检查当前网页是否存在一个id为imagegallaery的元素</li>
-<li>[ ] 遍历iamgegallary元素中的所有链接</li>
-<li>[ ] 设置onclick时间，让它在有关链接被点击是完成以下操作</li>
+<li>从工具相里面脱出一个动态面板,双击state，在这个页面里面可以添加任何你想要添加的东西，（注意一点的就是以为你在项目中会有很多的面板，为了让你的面板可以方便以后的管理就是一定要命名）</li>
+<li>上面已经完成的差不多了，在我们下一步操作的就是hidden这个面板，然后点击properties添加你想要添加的事件，通常情况下就是show this 动态面板</li>
+<li>最后就是点击返回的时候在返回hidden this动态面板<img src="/images/Axure3.png" alt="" style="float:right;"></li>
 </ul>
-<p>1.把这个链接作为参数传递给showPic函数</p>
-<p>2.取消链接被点击是的默认行为，不让浏览器打开这个链接</p>
+<p>接下来要说的就是Marvel，这个就是简单一点就是<br>方法就是</p>
+<ul>
+<li>任何你想要添加动作的地方<br><img src="/images/m0.png" alt=""></li>
+<li>添加一个类似模态框或者是popup的东西就是点击相机，选择Layer an image然后就是设置这个面板的替考位置</li>
+</ul>
+<p><img src="/images/m2.png" alt=""></p>
+<ul>
+<li>还有就是一定要记得添加Save Layer<br><img src="/images/m3.png" alt=""></li>
+<li>最后就是选择一个展示的形式就好了（Screen Transition）<br><img src="/images/m4.png" alt=""></li>
+</ul>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -114,7 +118,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2017/05/15/JavaScript与HTML分离/" data-title="JavaScript与HTML分离 | Yanjun Blog" data-tsina="null" class="share clearfix">
+  <div data-url="http://yoursite.com/2017/05/20/prototype学习/" data-title="prototype学习 | Yanjun Blog" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -123,19 +127,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/05/20/prototype学习/" title="prototype学习">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  prototype学习</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2017/05/09/avascript-第三章学习/"  title="Javascript 第三章学习">
+<a href="/2017/05/15/JavaScript与HTML分离/"  title="JavaScript与HTML分离">
  <strong>NEXT:</strong><br/> 
- <span>Javascript 第三章学习
+ <span>JavaScript与HTML分离
 </span>
 </a>
 </div>
@@ -148,7 +144,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#添加事件处理函数"><span class="toc-number">1.</span> <span class="toc-text">添加事件处理函数</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#原型图工具axure-amp-Marvelapp"><span class="toc-number">1.</span> <span class="toc-text">原型图工具axure&Marvelapp</span></a></li></ol>
   </div>
 
 <div id="asidepart">

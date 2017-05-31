@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>prototype学习 | Yanjun Blog</title>
+    <title>for...in | Yanjun Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Yanjun">
     
-    <meta name="description" content="原型图工具axure&amp;amp;Marvelapp我这一周学习的工具主要是axure和MarvelApp这两个原型工具都是以微信为原型来做的设置，这里我主要介绍一下我在学习上面遇到的各种坑点
-看到下面的这个图我的第一个坑点就是没有使用原型里面一个强打的工具就是母版，下面的四个切换的按钮因为有四个页面都">
+    <meta name="description" content="for…in学习这个假期没有好好学习，今天早上起了个大早来公司看这周学习的内容
+真的我学了这么长时间，算是发现了，你看的再多，都不如你自己上手做一下印象来的深刻
+这里是MDN上面的解释：for…in 语句以任意顺序遍历一个对象的可枚举属性。对于每个不同的属性，语句都会被执
+我自己觉得搞懂这个你还是要">
     
     
     
@@ -70,15 +72,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/05/20/prototype学习/" title="prototype学习" itemprop="url">prototype学习</a>
+      <a href="/2017/05/31/for-in/" title="for...in" itemprop="url">for...in</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="Yanjun">Yanjun</a>
     </p>
   <p class="article-time">
-    <time datetime="2017-05-20T06:29:44.000Z" itemprop="datePublished">2017-05-20</time>
-    更新日期:<time datetime="2017-05-20T07:26:45.976Z" itemprop="dateModified">2017-05-20</time>
+    <time datetime="2017-05-31T01:25:31.000Z" itemprop="datePublished">2017-05-31</time>
+    更新日期:<time datetime="2017-05-31T01:50:53.985Z" itemprop="dateModified">2017-05-31</time>
     
   </p>
 </header>
@@ -87,28 +89,14 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#原型图工具axure-amp-Marvelapp"><span class="toc-number">1.</span> <span class="toc-text">原型图工具axure&Marvelapp</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#for…in学习"><span class="toc-number">1.</span> <span class="toc-text">for…in学习</span></a></li></ol>
 		</div>
 		
-		<h2 id="原型图工具axure-amp-Marvelapp"><a href="#原型图工具axure-amp-Marvelapp" class="headerlink" title="原型图工具axure&amp;Marvelapp"></a>原型图工具axure&amp;Marvelapp</h2><p></p><p>我这一周学习的工具主要是axure和MarvelApp这两个原型工具都是以微信为原型来做的设置，这里我主要介绍一下我在学习上面遇到的各种坑点</p><p></p>
-<p></p><p>看到下面的这个图我的第一个坑点就是没有使用原型里面一个强打的工具就是母版，下面的四个切换的按钮因为有四个页面都要用，所以我们在设计网第一个页面的时候可以通过增加母版，从而重复利用下面啊的四个按钮</p><br><img src="/images/Axure1.png" alt=""><p></p>
-<p></p><p>接下来我想要介绍的就是Axure里面的动态面板，这个面板可以帮助我们实现我们想要的任何切换的功能，看下面的这个图片</p><br><img src="/images/Axure2.png" alt=""><br><p></p>
-<p>方法就是</p>
-<ul>
-<li>从工具相里面脱出一个动态面板,双击state，在这个页面里面可以添加任何你想要添加的东西，（注意一点的就是以为你在项目中会有很多的面板，为了让你的面板可以方便以后的管理就是一定要命名）</li>
-<li>上面已经完成的差不多了，在我们下一步操作的就是hidden这个面板，然后点击properties添加你想要添加的事件，通常情况下就是show this 动态面板</li>
-<li>最后就是点击返回的时候在返回hidden this动态面板<img src="/images/Axure3.png" alt="" style="float:right;"></li>
-</ul>
-<p>接下来要说的就是Marvel，这个就是简单一点就是<br>方法就是</p>
-<ul>
-<li>任何你想要添加动作的地方<br><img src="/images/m0.png" alt=""></li>
-<li>添加一个类似模态框或者是popup的东西就是点击相机，选择Layer an image然后就是设置这个面板的替考位置</li>
-</ul>
-<p><img src="/images/m2.png" alt=""></p>
-<ul>
-<li>还有就是一定要记得添加Save Layer<br><img src="/images/m3.png" alt=""></li>
-<li>最后就是选择一个展示的形式就好了（Screen Transition）<br><img src="/images/m4.png" alt=""></li>
-</ul>
+		<h2 id="for…in学习"><a href="#for…in学习" class="headerlink" title="for…in学习"></a>for…in学习</h2><p></p><p>这个假期没有好好学习，今天早上起了个大早来公司看这周学习的内容</p><p></p>
+<p></p><p>真的我学了这么长时间，算是发现了，你看的再多，都不如你自己上手做一下印象来的深刻</p><p></p>
+<p></p><p>这里是MDN上面的解释：<br><br>for…in 语句以任意顺序遍历一个对象的可枚举属性。对于每个不同的属性，语句都会被执</p><p></p>
+<p></p><p>我自己觉得搞懂这个你还是要看<a href="https://codepen.io/yqin/pen/YVmPrq" target="_blank" rel="external">例子</a> </p><p></p>
+<p></p><p>通过上面的这个例子我们这里主要看一下数组</p><br><img src="/images/forin.png"><br>1：for…in循环把某个数组的下标值临时赋给一个变量<br><br>  所以第一次进入循环的时候x变量的值就是数组的第一个下标值0。mycars[0]=”Saab”<br><br>  2: 第二次我们变量x的值就是1。mycars[1]=”Volvo”<br><br>3:  第三次我们变量x的值就是2。mycars[2]=”BMW”<p></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -118,7 +106,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2017/05/20/prototype学习/" data-title="prototype学习 | Yanjun Blog" data-tsina="null" class="share clearfix">
+  <div data-url="http://yoursite.com/2017/05/31/for-in/" data-title="for...in | Yanjun Blog" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -127,19 +115,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/05/31/for-in/" title="for...in">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  for...in</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2017/05/15/JavaScript与HTML分离/"  title="JavaScript与HTML分离">
+<a href="/2017/05/20/prototype学习/"  title="prototype学习">
  <strong>NEXT:</strong><br/> 
- <span>JavaScript与HTML分离
+ <span>prototype学习
 </span>
 </a>
 </div>
@@ -152,7 +132,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#原型图工具axure-amp-Marvelapp"><span class="toc-number">1.</span> <span class="toc-text">原型图工具axure&Marvelapp</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#for…in学习"><span class="toc-number">1.</span> <span class="toc-text">for…in学习</span></a></li></ol>
   </div>
 
 <div id="asidepart">
